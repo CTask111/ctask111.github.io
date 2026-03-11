@@ -77,6 +77,9 @@ td {
     padding: 10px;
     border-bottom: 1px solid var(--bg-color);
 }
+tbody tr {
+    background-color: #f6f6f6;
+}
 tbody tr:nth-child(even) {
     background-color: var(--bg-color);
 }
@@ -98,6 +101,9 @@ tbody tr:nth-child(even) {
 .warning-note {
     font-size: .9em;
     color: #444;
+}
+.req-star {
+    color: red;
 }
 fieldset {
     border: 1px solid var(--field-color);

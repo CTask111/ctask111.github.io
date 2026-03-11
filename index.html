@@ -88,22 +88,22 @@
             <section id="rsvp">
                 <h2>RSVP</h2>
                 <p>Please let us know if you will be attending.</p>
-                <p class="warning-note">* Required fields</p>
+                <p class="warning-note"><span class="req-star">*</span> Required fields</p>
 
                 <form action="result.html" method="GET">
                     <fieldset>
                         <legend>Your Information</legend>
 
-                        <label for="fname">First Name *</label>
+                        <label for="fname">First Name <span class="req-star">*</span></label>
                         <input type="text" id="fname" name="firstName" required>
 
-                        <label for="lname">Last Name *</label>
+                        <label for="lname">Last Name <span class="req-star">*</span></label>
                         <input type="text" id="lname" name="lastName" required>
 
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email">
 
-                        <label for="guests">Number of Guests *</label>
+                        <label for="guests">Number of Guests <span class="req-star">*</span></label>
                         <input type="number" min="1" max="10" id="guests" name="guests" required>
                     </fieldset>
                     <input type="text" name="company" style="display: none">
