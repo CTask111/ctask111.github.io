@@ -3,8 +3,7 @@
     --accent-color: #235;
     --accent2-color: #182035;
     --alink-color: #ddf;
-    --alink2-color: #235;
-    --alink2v-color: #314;
+    --alinkv-color: #daf;
     --el-bg-color: #fff;
     --itext-color: #fff;
     --field-color: #ddd;
@@ -37,6 +36,20 @@ header h1 {
 }
 header p {
     margin: 5px 0;
+}
+header a {
+    color: var(--alink-color);
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform .2s ease;
+    transform-origin: center;
+}
+header a:hover {
+    transform: scale(1.05);
+}
+header a:visited {
+    color: var(--alinkv-color);
 }
 #main-contents {
     width: 85%;
@@ -132,6 +145,29 @@ input:focus, select:focus {
     outline: none;
     border-color: var(--accent-color);
     box-shadow: 0 0 4px rgba(32, 40, 64, .25);
+}
+#notes-container {
+    width: 90%;
+    background-color: #f6f6f6;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    margin: 5px auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#notes {
+    width: 99%;
+    resize: none;
+    margin: 5px auto;
+}
+#note-chars {
+    width: fit-content;
+    margin-top: -30px;
+    margin-right: -92%;
+    filter: opacity(.5);
 }
 #submit-btn {
     width: 100%;

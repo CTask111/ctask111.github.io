@@ -12,6 +12,7 @@ function fillFields(data) {
         <p><strong>Name:</strong> ${data.fName} ${data.lName}</p>
         <p><strong>Email:</strong> ${data.email || "N/A"}</p>
         <p><strong>Number of Guests:</strong> ${data.guests}</p>
+        <p><strong>Notes:</strong> ${data.notes || "none"}</p>
     `;
 }
 
@@ -24,6 +25,7 @@ function fillFields(data) {
         lName: params.get("lastName"),
         email: params.get("email"),
         guests: params.get("guests"),
+        notes: params.get("notes").trim(),
         company: params.get("company")
     };
 

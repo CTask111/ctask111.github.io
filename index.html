@@ -10,6 +10,7 @@
     <header>
         <h1>Carson Tasker's Senior Recital</h1>
         <p>May 19, 2026 &bull; First Church of the Nazarene - Chapel &bull; 7:00 PM</p>
+        <p><a target="_blank" href="https://www.google.com/maps/place/First+Church+of+the+Nazarene/@37.6794698,-97.3212164,19z/data=!3m1!4b1!4m6!3m5!1s0x87bae3905ce790a1:0x4ef9311ffcd3ec77!8m2!3d37.6794687!4d-97.3205727!16s%2Fg%2F1tkbyr47?entry=ttu&g_ep=EgoyMDI2MDMxMC4wIKXMDSoASAFQAw%3D%3D">View directions</a></p>
     </header>
     <main>
         <div id="main-contents">
@@ -106,6 +107,10 @@
                         <label for="guests">Number of Guests <span class="req-star">*</span></label>
                         <input type="number" min="1" max="10" id="guests" name="guests" required>
                     </fieldset>
+                    <div id="notes-container">
+                        <textarea id="notes" name="notes" maxlength="300" rows="3" placeholder="Notes or questions"></textarea>
+                        <label for="notes" id="note-chars"><small id="chars">300</small></label>
+                    </div>
                     <input type="text" name="company" style="display: none">
                     <button type="submit" id="submit-btn">Submit RSVP</button>
                 </form>
@@ -115,6 +120,8 @@
     <footer>
         <p><small>&copy; 2026 CTask111. All rights reserved.</small></p>
     </footer>
+
+    <script src="notes.js"></script>
 </body>
 
 </html>
