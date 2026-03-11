@@ -1,6 +1,6 @@
 document.getElementById("return-btn").addEventListener("click", () => {
     sessionStorage.removeItem("rsvpSubmitted");
-    window.location.href = "rsvpForm.html";
+    window.location.href = "index.html";
 });
 
 function fillFields(data) {
