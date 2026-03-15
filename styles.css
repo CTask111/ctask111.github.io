@@ -2,12 +2,11 @@
     --bg-color: #eee;
     --accent-color: #235;
     --accent2-color: #182035;
+    --input-color: #ccc;
+    --field-color: #ddd;
     --alink-color: #ddf;
     --alinkv-color: #daf;
-    --el-bg-color: #fff;
-    --itext-color: #fff;
-    --field-color: #ddd;
-    --input-color: #ccc;
+    --off-bg-color: #f6f6f6;
 }
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,7 +18,7 @@ h1, h2, h3, caption {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1 {
-    color: var(--itext-color);
+    color: white;
 }
 h2, h3, caption {
     color: var(--accent-color);
@@ -28,7 +27,7 @@ header {
     text-align: center;
     padding: 40px 20px 20px 20px;
     background-color: var(--accent-color);
-    color: var(--itext-color);
+    color: white;
 }
 header h1 {
     margin-bottom: 10px;
@@ -61,7 +60,7 @@ body > footer {
     padding: 20px;
     margin-top: 40px;
     background-color: var(--accent-color);
-    color: var(--itext-color);
+    color: white;
     font-size: .85em;
 }
 
@@ -71,7 +70,7 @@ body > footer {
 table {
     width: 100%;
     margin-top: 20px;
-    background-color: var(--el-bg-color);
+    background-color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
 }
 caption {
@@ -82,7 +81,7 @@ caption {
 }
 th {
     background-color: var(--accent-color);
-    color: var(--el-bg-color);
+    color: white;
     padding: 12px;
     text-align: left;
 }
@@ -91,7 +90,7 @@ td {
     border-bottom: 1px solid var(--bg-color);
 }
 tbody tr {
-    background-color: #f6f6f6;
+    background-color: var(--off-bg-color);
 }
 tbody tr:nth-child(even) {
     background-color: var(--bg-color);
@@ -103,7 +102,7 @@ tbody tr:nth-child(even) {
     background-color: #eef;
 }
 #rsvp {
-    background-color: var(--el-bg-color);
+    background-color: white;
     padding: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
     border-radius: 6px;
@@ -148,7 +147,7 @@ input:focus, select:focus {
 }
 #notes-container {
     width: 90%;
-    background-color: #f6f6f6;
+    background-color: var(--off-bg-color);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
     margin: 5px auto;
     padding: 5px 10px;
@@ -176,7 +175,7 @@ input:focus, select:focus {
     border: none;
 }
 #confirmation {
-    background-color: var(--el-bg-color);
+    background-color: white;
     padding: 40px;
     margin: 60px auto;
     max-width: 600px;
@@ -193,7 +192,7 @@ input:focus, select:focus {
 [id*="btn"] {
     font-weight: bold;
     background-color: var(--accent-color);
-    color: var(--itext-color);
+    color: white;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color .2s ease,
