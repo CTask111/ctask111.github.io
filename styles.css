@@ -215,4 +215,9 @@ input:focus, select:focus {
     fieldset label {
         text-align: left;
     }
+    #note-chars {
+        font-size: .85em;
+        margin-top: -25px;
+        margin-right: -93%;
+    }
 }
