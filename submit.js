@@ -38,6 +38,11 @@ function fillFields(data) {
     if (data.fName && data.lName && data.guests) {
         fillFields(data);
 
+        if (data.notes == "//skip-post") {
+            console.log("POST skipped.");
+            return;
+        }
+
         await fetch(scriptURL, {
             method: "POST",
             body: JSON.stringify(data)
