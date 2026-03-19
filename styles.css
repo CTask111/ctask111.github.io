@@ -154,7 +154,6 @@ input:focus, select:focus, textarea:focus {
     margin-right: 35px;
     margin-top: -45px;
     margin-bottom: 30px;
-    background-color: var(--accent-color);
     filter: opacity(.5);
 }
 #submit-btn {
