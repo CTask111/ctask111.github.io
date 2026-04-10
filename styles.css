@@ -63,7 +63,6 @@ body > footer {
     color: white;
     font-size: .85em;
 }
-
 #program {
     margin-bottom: 60px;
 }
@@ -101,6 +100,20 @@ tbody tr:nth-child(even) {
     font-style: italic;
     font-weight: bold;
     background-color: #eef;
+}
+details {
+    margin-top: 1.5em;
+    padding: .5em;
+}
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+details[open] {
+    background-color: white;
+    border-radius: 6px;
+    padding: 1em;
 }
 #rsvp {
     background-color: white;
